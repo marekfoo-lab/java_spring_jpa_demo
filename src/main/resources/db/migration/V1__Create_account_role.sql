@@ -22,13 +22,14 @@ CREATE TABLE ADDRESS
      ACCOUNT_ID   int          NOT NULL
   );
 
---ManyToMany User-Role
+-- ROLE: ManyToMany User
 CREATE TABLE ROLE
   (
      ID           int NOT NULL AUTO_INCREMENT PRIMARY KEY,
      NAME         varchar(30)  NOT NULL UNIQUE
   );
 
+-- ROLE_ACCOUNT 
 CREATE TABLE ROLE_ACCOUNT
   (
      ROLE_ID      int  NOT NULL,
